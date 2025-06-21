@@ -20,3 +20,8 @@ apt-get -y install \
     php-zip \
     php-xml \
     php-xmlrpc
+
+#Install composer outside WORKDIR since it's not then under shared folder
+#and will be packaged to the image instead out of it
+echo "Install composer"
+curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
