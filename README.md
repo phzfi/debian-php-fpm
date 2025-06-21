@@ -42,8 +42,8 @@ Security: Update security updates regularly
     php-zip
     php-xml
     php-xmlrpc
-
 * PHP-CLI
+* Composer
 * SSMTP for sending email
 * Docker
 * Debian 
