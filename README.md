@@ -60,6 +60,16 @@ Security: Update security updates regularly
 
 ### 3.2. Start the Application
 
+    ./up.sh
+
+Tear down
+
+    ./down.sh
+
+Status
+
+    ./status.sh
+
 ### 3.3. Access the Application
 
 ### 3.4. Run Tests
@@ -121,3 +131,11 @@ Run
 
 ## 7. Problems
 
+### 7.1. Environments
+
+### 7.2. Coding
+
+### 7.3. Dependencies
+
+Add here TODO and blockers that you have found related to upgrading to newer versions.
+List the library/framework/service, version, and then the error message.
