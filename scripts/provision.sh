@@ -27,4 +27,7 @@ echo "Install composer"
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 #Create composer cache file one dir above web root, and change the permissions as www-root
 mkdir /var/www/.cache
-chown www-data:www-data /var/www/.cache
+mkdir /var/www/.config
+mkdir /var/www/vendor
+
+chown -R www-data:www-data /var/www/
