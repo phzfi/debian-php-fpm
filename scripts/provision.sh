@@ -25,3 +25,6 @@ apt-get -y install \
 #and will be packaged to the image instead out of it
 echo "Install composer"
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+#Create composer cache file one dir above web root, and change the permissions as www-root
+mkdir /var/www/.cache
+chown www-data:www-data /var/www/.cache
