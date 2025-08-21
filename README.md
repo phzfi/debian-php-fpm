@@ -44,7 +44,7 @@ Security: Update security updates regularly
     php-xmlrpc
 * PHP-CLI
 * Composer
-* SSMTP for sending email
+* MSMTP for sending email
 * Docker
 * Debian 
 * Jenkins (declarative multibranch pipeline)
@@ -79,6 +79,24 @@ Status
 ### 3.6. Version Control
 
 ### 3.7. Databases and Migrations
+
+#### 3.7.1 Email MSMTP
+
+To configure email MTA (msmtp) please add the following configuration file to the docker with your own settings:
+
+    /etc/msmtprc
+
+Contents:
+
+defaults
+account myuser
+host mail.server.example.com
+from myuser@my.domain
+account default : myuser
+syslog on
+logfile /var/log/mail.log
+
+
 
 ### 3.8. Continuous Integration
 

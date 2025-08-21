@@ -3,7 +3,7 @@
 #add-apt-repository ppa:ondrej/php
 apt-get update
 apt-get -y install \
-    ssmtp \
+    msmtp \
     php8.2-fpm \
     php8.2-cli \
     php-fpm \
