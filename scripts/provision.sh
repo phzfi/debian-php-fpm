@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PHP_VERSION=7.4
+PHP_VERSION=8.2
 
 #add-apt-repository ppa:ondrej/php
 apt-get update
