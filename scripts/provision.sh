@@ -1,11 +1,13 @@
 #!/bin/sh
 
+PHP_VERSION=7.4
+
 #add-apt-repository ppa:ondrej/php
 apt-get update
 apt-get -y install \
     msmtp \
-    php8.2-fpm \
-    php8.2-cli \
+    php$PHP_VERSION-fpm \
+    php$PHP_VERSION-cli \
     php-fpm \
     php-mysql \
     php-curl \

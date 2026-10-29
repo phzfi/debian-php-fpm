@@ -1,4 +1,4 @@
-FROM phzfi/debian:bookworm-latest
+FROM phzfi/debian:bullseye-latest
 
 #Note! Webroot is at /var/www/html, but let's install composer files etc one dir above
 WORKDIR /var/www
